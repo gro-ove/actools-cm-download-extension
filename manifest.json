@@ -1,0 +1,37 @@
+{
+    "name": "AC Content Manager Installation Buttons",
+    "short_name": "AC CM Installation Buttons",
+    "offline_enabled": false,
+    "description": "Adds Content Manager support to a bunch of AC content websites, such as RaceDepartment, AC Club or Assetto-DB.",
+    "version": "0.1",
+    "icons": {
+        "128": "icon-128.png",
+        "16": "icon-16.png",
+        "48": "icon-48.png"
+    },
+    "content_scripts": [
+        {
+            "all_frames": false,
+            "js": [ "zepto.js", "acclub.js" ],
+            "matches": [ "http://assettocorsa.club/*" ],
+            "run_at": "document_end"
+        },
+        {
+            "all_frames": false,
+            "js": [ "zepto.js", "racedepartment.js" ],
+            "matches": [ "http://www.racedepartment.com/*", "http://racedepartment.com/*" ],
+            "run_at": "document_end"
+        },
+        {
+            "all_frames": false,
+            "js": [ "zepto.js", "assettodb.js" ],
+            "matches": [ "http://www.assetto-db.com/*", "http://assetto-db.com/*" ],
+            "run_at": "document_end"
+        }
+    ],
+    "permissions": [ "http://assettocorsa.club/*", "http://www.racedepartment.com/*", "http://racedepartment.com/*",
+            "http://www.assetto-db.com/*", "http://assetto-db.com/*" ],
+    "manifest_version": 2,
+    "update_url": "https://clients2.google.com/service/update2/crx",
+    "web_accessible_resources": ["icon-48.png"]
+}
