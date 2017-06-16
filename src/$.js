@@ -8,3 +8,6 @@ function _$map(selector, fn, p){ return Array.prototype.map.call((p || document)
 function _$some(selector, fn, p){ return Array.prototype.some.call((p || document).querySelectorAll(selector), fn); }
 function _$every(selector, fn, p){ return Array.prototype.every.call((p || document).querySelectorAll(selector), fn); }
 function _$filter(selector, fn, p){ return Array.prototype.filter.call((p || document).querySelectorAll(selector), fn); }
+
+// as a variable, it can be easily redefined later for userscript format
+var _$res = function (url){ return chrome.extension.getURL(url); };

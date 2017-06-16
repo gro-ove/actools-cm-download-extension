@@ -3,7 +3,7 @@
     "short_name": "AC CM Installation Buttons",
     "offline_enabled": false,
     "description": "Adds Content Manager support to a bunch of AC content websites, such as RaceDepartment, AC Club or Assetto-DB.",
-    "version": "0.2",
+    "version": "0.2.1",
     "icons": {
         "128": "img/icon-128.png",
         "16": "img/icon-16.png",
