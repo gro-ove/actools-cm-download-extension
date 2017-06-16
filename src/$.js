@@ -10,4 +10,4 @@ function _$every(selector, fn, p){ return Array.prototype.every.call((p || docum
 function _$filter(selector, fn, p){ return Array.prototype.filter.call((p || document).querySelectorAll(selector), fn); }
 
 // as a variable, it can be easily redefined later for userscript format
-var _$res = function (url){ return chrome.extension.getURL(url); };
+var _$res = function (url){ return browser.extension.getURL(url); };
