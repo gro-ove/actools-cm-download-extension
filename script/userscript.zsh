@@ -25,7 +25,7 @@ ${pkg.permissions.map(x => '// @match        ' + x).join('\n')}
 ${fs.readFileSync('src/$.js')}
 
 _$res = function (url){
-  if (url == 'img/icon-acclub.png') return 'http://i.imgur.com/OZO6Cn0.png';
+  if (url == 'img/icon-acclub.png') return 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA9QTFRFmZmZZmZmMzMzAAAAgYGBlaSnFAAAAAV0Uk5T/////wD7tg5TAAABkElEQVR42qSXSwLDIAgFBbz/mVvjJ4CgQbN7qTOmVgxN+fJK9t2UrgRABDeCP38lKPyN4OEvBJU/FzT+WND5U8HgDwUvfyZg/JGA8ycCwTMBIHwSSP4V7Ooi2fyYVdcFgExdsOK5AFAkolb3S16sh0jUBWuerQeq1WmCDT+Qhyf5aRHs+I5UfiTqgi3fkMb3RF2QcMdXpPMtkSOw+AcZfE3kCEy+IC//JHIEmJy6YHxJ5AjQqwvO/xM5AsyIYO4rsUwyMcGf1yv03v8gqONg5tXv7AnaPLDlHUF/TtjytmB8zz1vCvQ6rXhLEOInwX+XpQg/C3JofvMJQrwhiPGzAGP8N8GC/yRY8bI20RRoHlGcWTIZglX9lQNDplkw8++Q58CRaRIY/BhSDyyZtMDi+5B2ZstUdiK/wOAb0s98mXSjafH15nhnyKQFZqODnFDJ61TFex05oZISJLPRQk5kwa/WwOv0ZPIFcNbuY7RV9QTHfzgwyDuC77wtCPCmIMJbWznEz0+AMT6nfHldC34CDADQEDTb2F/V3AAAAABJRU5ErkJggg==';
   return '';
 };
 
