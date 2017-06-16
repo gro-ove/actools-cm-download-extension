@@ -46,3 +46,11 @@ Network Trash Folder
 Temporary Items
 .apdisk
 *.psd
+
+# =========================
+# Project-specific
+# =========================
+*.sublime-*
+*.bat
+*.zip
+*.psd
