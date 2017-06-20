@@ -1,5 +1,5 @@
 # actools-cm-download-extension
-Adds Content Manager support to RSR Live Timing website, The Setup Market, RaceDepartment, AC Club and Assetto-DB.
+Adds [Content Manager](https://github.com/gro-ove/actools) support to RSR Live Timing website, The Setup Market, RaceDepartment, AC Club and Assetto-DB.
 
 ### Links
 
