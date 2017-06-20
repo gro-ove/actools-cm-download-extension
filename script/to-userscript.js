@@ -1,4 +1,4 @@
-//____ 2>/dev/null;cd ${0:h}/..;node script/${0:t} $@>dist/userscript.js;exit
+#!node
 
 var fs = require('fs');
 var base64img = require('base64-img');
