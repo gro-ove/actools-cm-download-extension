@@ -2,7 +2,7 @@
 // @name         AC Content Manager Installation Buttons
 // @namespace    http://tampermonkey.net/
 // @homepageURL  https://github.com/gro-ove/actools-cm-download-extension
-// @version      0.2.2
+// @version      0.2.3
 // @description  Adds Content Manager support to RSR Live Timing website, The Setup Market, RaceDepartment, AC Club and Assetto-DB.
 // @author       x4fab
 // @match        http://assettocorsa.club/*
