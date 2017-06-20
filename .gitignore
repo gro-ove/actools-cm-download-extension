@@ -54,3 +54,6 @@ Temporary Items
 *.bat
 *.zip
 *.psd
+
+node_modules/*
+dist/screens/*

@@ -1,0 +1,27 @@
+{
+  "name": "actools-cm-download-extension",
+  "version": "0.0.1",
+  "description": "This package is only for node modules for userscript.zsh.",
+  "main": "index.js",
+  "dependencies": {
+    "base64-img": "^1.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gro-ove/actools-cm-download-extension.git"
+  },
+  "keywords": [
+    "assetto",
+    "corsa"
+  ],
+  "author": "x4fab",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gro-ove/actools-cm-download-extension/issues"
+  },
+  "homepage": "https://github.com/gro-ove/actools-cm-download-extension#readme"
+}
