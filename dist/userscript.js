@@ -10,6 +10,7 @@
 // @match        http://racedepartment.com/*
 // @match        http://www.assetto-db.com/*
 // @match        http://assetto-db.com/*
+// @match        http://thesetupmarket.com/*
 // @match        http://www.radiators-champ.com/RSRLiveTiming/*
 // @grant        none
 // @license      MIT License
