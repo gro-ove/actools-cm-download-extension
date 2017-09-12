@@ -38,8 +38,6 @@
   ],
   "permissions": [
     "http://assettocorsa.club/*",
-    "http://www.racedepartment.com/*",
-    "http://racedepartment.com/*",
     "http://www.assetto-db.com/*",
     "http://assetto-db.com/*",
     "http://thesetupmarket.com/*",
