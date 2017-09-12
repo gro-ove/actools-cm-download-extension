@@ -2,12 +2,10 @@
 // @name         AC Content Manager Installation Buttons
 // @namespace    http://tampermonkey.net/
 // @homepageURL  https://github.com/gro-ove/actools-cm-download-extension
-// @version      0.2.3
-// @description  Adds Content Manager support to RSR Live Timing website, The Setup Market, RaceDepartment, AC Club and Assetto-DB.
+// @version      0.2.4
+// @description  Adds Content Manager support to RSR Live Timing website, The Setup Market, AC Club and Assetto-DB.
 // @author       x4fab
 // @match        http://assettocorsa.club/*
-// @match        http://www.racedepartment.com/*
-// @match        http://racedepartment.com/*
 // @match        http://www.assetto-db.com/*
 // @match        http://assetto-db.com/*
 // @match        http://thesetupmarket.com/*
@@ -72,25 +70,6 @@ if (_$('p.download a', function (x){ return x.textContent; }) == 'DOWNLOAD'){
         'background: url(' + JSON.stringify(_$res('img/icon-acclub.png')) + ') left center / contain no-repeat;' +
         'display: inline-block;');
     x.parentNode.insertBefore(c, x.nextSibling);
-  });
-}
-} else if (/^http:\/\/www\.racedepartment\.com\/.*/i.test(location.href) || /^http:\/\/racedepartment\.com\/.*/i.test(location.href)){
-if (_$some('.crust [itemprop="title"]', function (x){ return x.textContent == 'Assetto Corsa'; })){
-  _$each('.__cmspecial', function (x){ x.parentNode.removeChild(x); });
-  _$('.resourceInfo .downloadButton', function (x){
-    var p = x.parentNode;
-    var c = p.cloneNode(true);
-    c.classList.add('__cmspecial');
-    c.setAttribute('style', 'filter:hue-rotate(-120deg);-webkit-filter:hue-rotate(-120deg)');
-
-    _$('a', function (a){
-      a.textContent = 'Install Using Content Manager';
-      _$('.resourceInfo .downloadButton .minorText', function (x){ a.appendChild(x.cloneNode(true)); });
-      a.setAttribute('href', 'acmanager://install?url=' + encodeURIComponent(location.href));
-      a.removeAttribute('target');
-    }, c);
-    _$('.downloadDisabled', function (b) { b.classList.remove('downloadDisabled'); }, c);
-    p.parentNode.insertBefore(c, p.nextSibling);
   });
 }
 } else if (/^http:\/\/www\.assetto-db\.com\/.*/i.test(location.href) || /^http:\/\/assetto-db\.com\/.*/i.test(location.href)){
