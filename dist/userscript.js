@@ -21,7 +21,6 @@ function _$(selector, fn, p){
   var e = (p || document).querySelector(selector);
   return fn ? e ? fn(e) : undefined : e;
 }
-
 function _$each(selector, fn, p){ Array.prototype.forEach.call((p || document).querySelectorAll(selector), fn); }
 function _$map(selector, fn, p){ return Array.prototype.map.call((p || document).querySelectorAll(selector), fn); }
 function _$some(selector, fn, p){ return Array.prototype.some.call((p || document).querySelectorAll(selector), fn); }
@@ -51,7 +50,6 @@ _$res = function (url){
   if (url == "img/icon-radiatorschamp-30.png") return "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACFQTFRF///////M/8zM/8yZ/5mZzJmZzJlmzGZmzGYzzDMz////Hc17DAAAAAt0Uk5T/////////////wBKTwHyAAAA5ElEQVR42nzT2xaEIAgF0BNBaP//wcNFDWfWxFOyVwRquFfg/o0nB+CFwfTyNs7+wqYv7PqfQ5O/+sNSicdjlMMapipp5gmp2LUHQ3yJQ82pajDE10DrxlrV2dQSri350X7B1TJH64MlWgjV1M5RNNhUUFWJyGZIJi+wvcunqjIn59e3ypc3IcF3fKVq52gueaQebQ/PuWtlSpExve5qA1Pw2di3TqxNvZbaBvhMOV2cSsSjfYav5rmP9TzfcRCVedwBGd3cG/N6lqmFufwRajuy3fND6h3ERTt/31D8/+9KfAQYAH4FGSoAsxbPAAAAAElFTkSuQmCC";
   if (url == "img/icon-radiatorschamp-48.png") return "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADxQTFRF/8wA/5kA/wAAzJkAzAAAmWYAmQAzmQAAZmYAZjMAZgAzZgAAMzMzMzMAMwAzMwAAADMzAAAzAAAAogAl5T9rCwAAABR0Uk5T/////////////////////////wBPT+cRAAACAElEQVR42pSVi5KDIAwAqUoU0EvB///XSyCAUOzUzPRBu8sjAVFnFxbOr6G6Njj7SIB1ck8E4h8JzC8PBOafCJF/ICT+d0H4nxdd+B9HKPy0imAdfBEqv2Di7DKVkkNVAVTPJ8yu05IF+MPMu92qngfhiwC4/0HmozDsvwjE7zJN4nen7ngRmBeBeRLu+CREPgmRJ8Hd8FFIfBQSz8LS8TAVQXgWhK9CyX+tIJzC71j4IlD/sbKVX1zun4TCZ2FxNp5Ne6144XfETiDe8Ta94Tsh/su5stDx3l+n9PZvGYHnH6GWfx96O/aDYj+QXps2PgprnA9RHb/NH7G9SbDC10jzOebZGIYyTS1lPO2lc8j7TekQNL2JQS36yVsFQ3735qU9WZs3InivqWWVXUY8TUkTY6jPPAJ/OWhKrVDz79nQF0EzH7oRrvUKZEjHohwhOGiEbj8EyovOa5gN+kA79Co0PHWGMVUlS5E/qXCLxOoanp4W3LtO/Gvz6eApwBK26Z8Erl6pW0gnRkGNlmch1BUL39wP2PB8QAPqnCHhh0LiSQjO4kYKbdvMNxcKNjxdqLwQ5F2IhR8ImT9Fw3nGy+P4Qwj9Y97Ns7u543DEk/D6InS8M8bwounDDYWOB/OSfUqVHqW1nw/wCBKDOsDHtQaU2RwwEAZXYN03+Zd/AQYAX0xuXwD83e4AAAAASUVORK5CYII=";
   return '';
-}
 };
 
 if (/^http:\/\/assettocorsa\.club\/.*/i.test(location.href)){
@@ -132,7 +130,7 @@ if (!_$('#__cm_stop')){
         c.classList.remove('icon-download');
         c.textContent = 'install using CM';
         c.setAttribute('href', 'acmanager://thesetupmarket/setup?id=' + id);
-        c.setAttribute('style', 'right:220px;filter:hue-rotate(-60deg);-webkit-filter:hue-rotate(-60deg)')
+        c.setAttribute('style', 'right:220px;filter:hue-rotate(-60deg);-webkit-filter:hue-rotate(-60deg)');
       }, 100);
     });
   });
