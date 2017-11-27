@@ -3,6 +3,7 @@
 var fs = require('fs');
 var base64img = require('base64-img');
 var pkg = JSON.parse('' + fs.readFileSync('manifest.json'));
+var filter = process.argv[2] ? new RegExp(process.argv[2]) : { test: () => true };
 
 function regex(m){
   return `/^${m.replace(/(?=[./\\$^])/g, '\\').replace(/\*/g, '.*')}/i`
@@ -40,12 +41,11 @@ ${pkg.permissions.map(x => '// @match        ' + x).join('\n')}
 ${fs.readFileSync('src/$.js')}
 
 _$res = function (url){
-${res.join('\n')}
+${res.filter(x => filter.test(x)).join('\n')}
   return '';
-}
 };
 
 ${pkg.content_scripts.map(x => `if (${x.matches.map(x => regex(x) + '.test(location.href)').join(' || ')}){
-${x.js.filter(f => f != 'src/$.js').map(f => ('' + fs.readFileSync(f)).trim()).join('\n')}
+${x.js.filter(f => f != 'src/$.js' && filter.test(f)).map(f => ('' + fs.readFileSync(f)).trim()).join('\n')}
 }`).join(' else ')}
 })();`);
