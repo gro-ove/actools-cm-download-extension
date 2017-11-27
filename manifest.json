@@ -4,7 +4,7 @@
   "offline_enabled": false,
   "author": "x4fab",
   "description": "Adds Content Manager support to RSR Live Timing website, The Setup Market, AC Club and Assetto-DB.",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "icons": {
     "128": "img/icon-128.png",
     "16": "img/icon-16.png",
