@@ -14,7 +14,7 @@
     {
       "all_frames": false,
       "js": [ "src/$.js", "src/acclub.js" ],
-      "matches": [ "http://assettocorsa.club/*" ],
+      "matches": [ "http://assettocorsa.club/*", "https://assettocorsa.club/*" ],
       "run_at": "document_end"
     },
     {

@@ -53,13 +53,12 @@ _$res = function (url){
   return '';
 };
 
-if (/^http:\/\/assettocorsa\.club\/.*/i.test(location.href)){
+if (/^http:\/\/assettocorsa\.club\/.*/i.test(location.href) || /^https:\/\/assettocorsa\.club\/.*/i.test(location.href)){
 if (_$('p.download a', function (x){ return x.textContent; }) == 'DOWNLOAD'){
   _$('.spec > div', function (x) { x.style.width = '60%'; });
   _$('.spec > div:last-child', function (x) { x.style.width = '40%'; });
   _$each('.__cmspecial', function (x){ x.parentNode.removeChild(x); });
   _$('p.download a', function (x) {
-    if (x.href.indexOf('racedepartment.com') !== -1) return;
     var c = x.cloneNode();
     c.classList.add('__cmspecial');
     c.removeAttribute('target');
